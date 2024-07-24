@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Processor</title>
+    <style>
+        /* CSS Inline untuk demonstrasi */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+        input, button {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>File Processor</h1>
+    
+    <h2>Convert TXT to VCF</h2>
+    <input type="file" id="txtFileInput">
+    <textarea id="fileContent" placeholder="Isi file TXT akan ditampilkan di sini"></textarea>
+    <button id="convertCountButton">Hitung Kontak</button>
+    <input type="text" id="convertContactCount" readonly>
+    <input type="text" id="convertFileNameInput" placeholder="Nama file VCF">
+    <input type="text" id="contactNameInput" placeholder="Nama kontak">
+    <button id="convertButton">Convert ke VCF</button>
+    
+    <h2>Split VCF File</h2>
+    <input type="file" id="vcfFileInput">
+    <button id="splitCountButton">Hitung Kontak di VCF</button>
+    <input type="text" id="splitContactCount" readonly>
+    <input type="text" id="splitFileNameInput" placeholder="Nama file VCF">
+    <input type="text" id="contactsPerFile" placeholder="Jumlah kontak per file">
+    <button id="splitButton">Pecah VCF</button>
+    
+    <h2>Merge TXT Files</h2>
+    <input type="file" id="txtFilesInput" multiple>
+    <input type="text" id="mergedFileNameInput" placeholder="Nama file hasil merge">
+    <button id="mergeButton">Gabungkan TXT</button>
+    
+    <script>
+        // JavaScript di sini (Salin seluruh kode JavaScript yang telah kita bahas sebelumnya)
+    </script>
+</body>
+</html>
