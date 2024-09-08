@@ -41,13 +41,13 @@ document.getElementById('processFilesBtn').addEventListener('click', function() 
                 lines.forEach(line => {
                     const lowerCaseLine = line.toLowerCase();
 
-                    if (['admin', '管理号', '管理', '管理员', '管理號'].includes(lowerCaseLine)) {
+                    if (['admin', '管理号', '管理', '管理员', '管理號','管理号码','管理','管理号'].includes(lowerCaseLine)) {
                         currentCategory = globalAdminName;
                         contactIndex = 1;
-                    } else if (['navy', '水軍', '小号', '水军', '水軍'].includes(lowerCaseLine)) {
+                    } else if (['navy', '水軍', '小号', '水军', '水軍','会员号',].includes(lowerCaseLine)) {
                         currentCategory = globalNavyName;
                         contactIndex = 1;
-                    } else if (['anggota', '数据', '客户', '底料', '进群资源'].includes(lowerCaseLine)) {
+                    } else if (['anggota', '数据', '客户', '底料', '进群资源','会员号','料子','以下是73个水军都进15个群','料子',].includes(lowerCaseLine)) {
                         currentCategory = globalAnggotaName;
                         contactIndex = 1;
                     } else if (line) {
